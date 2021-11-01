@@ -1,5 +1,5 @@
 import axios from "axios";
-import {REACT_APP_API_URL} from "../../../../../../config";
+import { REACT_APP_API_URL } from "../../../../../../config";
 
 export function requestGetGateways() {
   return axios.request({

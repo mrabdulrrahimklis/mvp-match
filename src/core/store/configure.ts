@@ -4,11 +4,11 @@ import {
   getDefaultMiddleware,
 } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
-import user from './shared/reducer/user.slice'
-import chart from './shared/reducer/chart.slice'
-import project from '../../modules/home/store/reducer/project.slice'
-import gateway from '../../modules/home/store/reducer/gateway.slice'
-import report from '../../modules/home/store/reducer/report.slice'
+import user from "./shared/reducer/user.slice";
+import chart from "./shared/reducer/chart.slice";
+import project from "../../modules/home/store/reducer/project.slice";
+import gateway from "../../modules/home/store/reducer/gateway.slice";
+import report from "../../modules/home/store/reducer/report.slice";
 import { watcherSaga } from "./rootSaga";
 
 const reducer = combineReducers({
@@ -16,7 +16,7 @@ const reducer = combineReducers({
   project,
   gateway,
   report,
-  chart
+  chart,
 });
 
 const sagaMiddleware = createSagaMiddleware();

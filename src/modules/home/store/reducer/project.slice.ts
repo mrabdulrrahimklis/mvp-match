@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {IProject} from "../../models/IProject";
+import { IProject } from "../../models/IProject";
 
 const projectSlice = createSlice({
   name: "project",
